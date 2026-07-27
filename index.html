@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kevin & Ruth | Casamento</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- INVITADO PERSONALIZADO -->
+
+<div id="guestWelcome" class="guest-welcome" style="display:none;">
+
+    <p class="guest-label">
+        Convite Especial
+    </p>
+
+    <h2 id="guestName"></h2>
+
+    <p>
+        É uma alegria ter você connosco neste dia tão especial.
+    </p>
+
+    <div class="guest-details">
+
+        <div>
+            <span>👥</span>
+            <strong id="guestPeople"></strong>
+            <small>Convidados</small>
+        </div>
+
+        <div>
+            <span>🪑</span>
+            <strong id="guestTable"></strong>
+            <small>Table</small>
+        </div>
+
+    </div>
+
+</div>
+<!-- BOTÃO DE MÚSICA -->
+
+<button id="musicButton" class="music-button" onclick="toggleMusic()">
+    ▶ Música
+</button>
+
+<audio id="weddingMusic" loop>
+    <source src="music/musica.mp3" type="audio/mpeg">
+</audio>
+<header>
+
+<div class="logo">
+Kevin <span>&</span> Ruth
+</div>
+
+<nav id="menu">
+
+<a href="#">Início</a>
+
+<a href="#historia">História</a>
+
+<a href="#noivos">Noivos</a>
+
+<a href="#programa">Programa</a>
+
+<a href="#galeria">Galeria</a>
+
+<a href="#rsvp">RSVP</a>
+
+</nav>
+<div class="menu-toggle" id="menuToggle">
+    ☰
+</div>
+</header>
+
+<section class="hero">
+
+<div class="overlay">
+<div class="hero-decoration"></div>
+	
+<p class="save-date">SAVE THE DATE</p>
+
+<h3>Bem-vindos ao nosso casamento</h3>
+
+<h1>Kevin <span>&</span> Ruth</h1>
+
+<p class="date">
+20 de Novembro de 2026
+</p>
+
+<p class="verse">
+
+"Assim, eles já não são dois,
+mas uma só carne."
+
+</p>
+
+<p class="verse2">
+
+Mateus 19:6
+	<p class="frase">
+Com alegria convidamos você para celebrar este momento inesquecível connosco.
+</p>
+
+</p>
+
+<div id="countdown">
+
+00 Dias
+
+00 Horas
+
+00 Minutos
+
+00 Segundos
+
+</div>
+
+<div class="hero-buttons">
+
+<a href="#rsvp" class="btn">
+Confirmar Presença
+</a>
+
+<a href="#programa" class="btn2">
+Ver Programa
+</a>
+
+</div>
+<a href="#historia" class="btn2">
+Conheça a Nossa História
+</a>
+</div>
+
+</section>
+
+<section id="historia" class="historia">
+
+    <h2>Nossa História</h2>
+
+    <p class="subtitulo">
+        Deus escreveu a nossa história com amor, paciência e propósito.
+    </p>
+
+  <div class="timeline">
+
+        <div class="evento">
+            <div class="icone">❤️</div>
+            <h3>Primeiro Contacto</h3>
+            <p>
+                Foi aqui que Deus começou a escrever a nossa história.
+            </p>
+        </div>
+
+        <div class="evento">
+            <div class="icone">☕</div>
+            <h3>Primeiro Encontro</h3>
+            <p>
+                Um momento simples que marcou o início de uma grande amizade.
+            </p>
+        </div>
+
+        <div class="evento">
+            <div class="icone">💍</div>
+            <h3>Pedido de Casamento</h3>
+            <p>
+                Um dos dias mais felizes das nossas vidas.
+            </p>
+        </div>
+
+        <div class="evento">
+            <div class="icone">👰🤵</div>
+            <h3>20 de Novembro de 2026</h3>
+            <p>
+                O dia em que diremos "Sim" diante de Deus e das nossas famílias.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<section id="noivos" class="noivos">
+
+    <h2>Os Noivos</h2>
+
+    <p class="subtitulo">
+        Duas vidas unidas pelo amor e pela graça de Deus.
+    </p>
+
+    <div class="cards-noivos">
+
+        <div class="card-noivo">
+
+            <img src="images/noivos/IMG_9841.jpg" alt="Kevin">
+
+            <h3>Kevin Nsiku</h3>
+
+            <h4>O Noivo</h4>
+
+            <p>
+                Homem de fé, apaixonado por tecnologia e comprometido em construir uma família firmada em Deus.
+            </p>
+
+            <blockquote>
+                "Tudo posso naquele que me fortalece."
+                <br>
+                <strong>Filipenses 4:13</strong>
+            </blockquote>
+
+        </div>
+
+        <div class="card-noivo">
+
+            <img src="images/noivos/IMG_9617.jpg" alt="Ruth">
+
+            <h3>Ruth Landu</h3>
+
+            <h4>A Noiva</h4>
+
+            <p>
+                Mulher virtuosa, dedicada e cheia de amor, pronta para iniciar uma nova etapa ao lado de Kevin.
+            </p>
+
+            <blockquote>
+                "O amor jamais acaba."
+                <br>
+                <strong>1 Coríntios 13:8</strong>
+            </blockquote>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="programa" class="programa">
+
+    <h2>Programa</h2>
+
+    <p class="subtitulo">
+        Acompanhe os momentos especiais do nosso grande dia.
+    </p>
+
+    <div class="programa-lista">
+
+        <div class="programa-item">
+            <span class="hora">09:00</span>
+            <h3>Cerimónia Religiosa</h3>
+            <p>Início da cerimónia de casamento.</p>
+        </div>
+
+        <div class="programa-item">
+            <span class="hora">11:30</span>
+            <h3>Sessão Fotográfica</h3>
+            <p>Fotografias com familiares e convidados.</p>
+        </div>
+
+        <div class="programa-item">
+            <span class="hora">13:00</span>
+            <h3>Recepção</h3>
+            <p>Almoço, música e celebração.</p>
+        </div>
+
+        <div class="programa-item">
+            <span class="hora">18:00</span>
+            <h3>Encerramento</h3>
+            <p>Agradecimento aos convidados.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="galeria" class="galeria">
+
+    <h2>Galeria</h2>
+
+    <p class="subtitulo">
+        Alguns momentos especiais da nossa caminhada.
+    </p>
+
+    <div class="galeria-grid">
+
+        <img src="images/galeria/IMG-20250818-WA0039.jpg" alt="Foto 1">
+
+        <img src="images/galeria/IMG-20250818-WA0043.jpg" alt="Foto 2">
+
+        <img src="images/galeria/IMG-20250531-WA0007.jpg" alt="Foto 3">
+
+        <img src="images/galeria/IMG_20250813_213444_443.jpg" alt="Foto 4">
+
+        <img src="images/galeria/IMG_20250202_172335_083.jpg" alt="Foto 5">
+
+        <img src="images/galeria/1734561701690.jpg" alt="Foto 6">
+
+    </div>
+
+</section>
+	
+<section id="localizacao" class="localizacao">
+
+    <h2>Localização</h2>
+
+    <p class="subtitulo">
+        Esperamos por si neste dia tão especial.
+    </p>
+
+    <div class="mapa">
+
+    <iframe
+        src="https://www.google.com/maps?q=Salão+De+Eventos+JOANA+%26+FILHOS,+Luanda,+Angola&output=embed"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
+</div>
+
+<a
+    href="https://www.google.com/maps/search/?api=1&query=Salão+De+Eventos+JOANA+%26+FILHOS,+Luanda,+Angola"
+    target="_blank"
+    class="btn">
+    📍 Ver no Google Maps
+</a>
+
+</section>
+	
+<section id="rsvp" class="rsvp">
+
+    <h2>Confirmar Presença</h2>
+
+    <p class="subtitulo">
+        Ficaremos muito felizes com a sua presença.
+        Por favor confirme antes do dia 10 de Novembro de 2026.
+    </p>
+
+    <form class="form-rsvp" id="rsvpForm">
+
+    <input
+        type="text"
+        id="nom"
+        placeholder="Nome Completo"
+        required>
+
+    <input
+        type="tel"
+        id="telefone"
+        placeholder="Telefone"
+        required>
+
+    <select id="convidados" required>
+
+        <option value="">
+            Número de convidados
+        </option>
+
+        <option value="1 Pessoa">
+            1 Pessoa
+        </option>
+
+        <option value="2 Pessoas">
+            2 Pessoas
+        </option>
+
+    </select>
+
+    <textarea
+    id="mensagemRsvp"
+    placeholder="Deixe uma mensagem para os noivos">
+</textarea>
+
+    <button type="submit" class="btn">
+        Confirmar Presença
+    </button>
+
+</form>
+
+</section>
+	
+<section id="presentes" class="presentes">
+
+    <h2>Lista de Presentes</h2>
+
+    <p class="subtitulo">
+        A sua presença é o maior presente que poderíamos receber.
+        <br>
+        Mas, se desejar oferecer-nos algo, receberemos o seu gesto
+        com muito amor e gratidão.
+    </p>
+
+    <div class="presentes-grid">
+
+        <div class="presente-card">
+
+            <div class="icone">🏠</div>
+
+            <h3>Novo Lar</h3>
+
+            <p>
+                Ajude-nos a construir o nosso lar e a começar
+                esta nova etapa da nossa vida juntos.
+            </p>
+
+        </div>
+
+
+        <div class="presente-card">
+
+            <div class="icone">✈️</div>
+
+            <h3>Lua de Mel</h3>
+
+            <p>
+                Contribua para que possamos guardar
+                memórias inesquecíveis da nossa lua de mel.
+            </p>
+
+        </div>
+
+
+        <div class="presente-card">
+
+            <div class="icone">🎁</div>
+
+            <h3>Oferta Livre</h3>
+
+            <p>
+                Qualquer gesto de carinho será recebido
+                com muita alegria e gratidão.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+	
+<section id="mensagem" class="mensagem">
+
+    <div class="mensagem-box">
+
+        <h2>Uma Mensagem Especial</h2>
+
+        <p>
+            Queridos familiares e amigos,
+        </p>
+
+        <p>
+            Com grande alegria, convidamos cada um de vocês para fazer parte
+            deste momento único das nossas vidas.
+        </p>
+
+        <p>
+            A presença de cada convidado tornará este dia ainda mais especial.
+            Que Deus abençoe cada família e retribua todo o carinho recebido.
+        </p>
+
+        <h3>
+            Com amor,
+            <br>
+            Kevin & Ruth
+        </h3>
+
+    </div>
+
+</section>
+	
+<section id="contactos" class="contactos">
+
+    <div class="contactos-box">
+
+        <h2>Contactos</h2>
+
+        <p>
+            Para qualquer informação ou esclarecimento,
+            estaremos felizes em ajudar.
+        </p>
+
+        <div class="contactos-lista">
+
+            <div class="contacto-item">
+                <h3>Kevin</h3>
+                <p>📞 +244 936 788 358</p>
+                <a href="https://wa.me/244936788358" target="_blank">WhatsApp Kevin
+              </a>
+            </div>
+
+
+            <div class="contacto-item">
+                <h3>Ruth</h3>
+                <p>📞 +244 927 403 706</p>
+                <a href="https://wa.me/244927403706" target="_blank"> WhatsApp Ruth
+               </a>
+            </div>
+
+
+            <div class="contacto-item">
+
+    <h3>Email</h3>
+
+    <p>
+        klukuamiko@email.com
+    </p>
+
+    <a href="mailto:klukuamiko@email.com">
+        ✉️ Enviar Email
+    </a>
+
+</div>
+
+        </div>
+
+
+        <h3 class="local">
+            📍 Local da Cerimónia
+        </h3>
+
+        <p>
+    Salão de Eventos JOANA & FILHOS
+    <br>
+    Rotunda de Camama, em direcção à Calemba 2
+    <br>
+    Em frente ao Banco Atlântico — Luanda
+</p>
+
+
+    </div>
+
+</section>
+	
+<section id="qrcode" class="qrcode">
+
+    <div class="qrcode-box">
+
+        <h2>Convite Digital</h2>
+
+        <p>
+            Aponte a câmera do seu telemóvel para o QR Code
+            e acesse todos os detalhes do nosso casamento.
+        </p>
+
+
+        <div class="qr-container">
+
+    <img src="./images/qrcode.png"
+         alt="QR Code do casamento Kevin e Ruth">
+
+</div>
+
+
+        <h3>
+            Kevin & Ruth
+            <br>
+            20 de Novembro de 2026
+        </h3>
+
+
+    </div>
+
+</section>
+
+	
+<script src="js/countdown.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/guest.js"></script>
+	
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h2>Kevin <span>&</span> Ruth</h2>
+
+        <p>
+            Obrigado por fazer parte do nosso grande dia.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#historia">História</a>
+
+            <a href="#programa">Programa</a>
+
+            <a href="#galeria">Galeria</a>
+
+            <a href="#rsvp">RSVP</a>
+
+            <a href="#contactos">Contactos</a>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Kevin & Ruth
+            <br>
+            Feito com ❤️ para celebrar o amor.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<script>
+const music = document.getElementById("weddingMusic");
+const musicButton = document.getElementById("musicButton");
+
+function toggleMusic() {
+
+    if (music.paused) {
+
+        music.play()
+            .then(function () {
+                musicButton.innerHTML = "❚❚";
+            })
+            .catch(function (error) {
+                console.log("Impossible de lire la musique :", error);
+            });
+
+    } else {
+
+        music.pause();
+
+        musicButton.innerHTML = "▶";
+    }
+}
+</script>
+<script>
+const rsvpForm = document.getElementById("rsvpForm");
+
+rsvpForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const nome = document.getElementById("nom").value;
+    const telefone = document.getElementById("telefone").value;
+    const convidados = document.getElementById("convidados").value;
+    const mensagem = document.getElementById("mensagem").value;
+
+    const texto =
+        "💍 CONFIRMAÇÃO DE PRESENÇA — KEVIN & RUTH%0A%0A" +
+        "👤 Nome: " + encodeURIComponent(nome) + "%0A" +
+        "📞 Telefone: " + encodeURIComponent(telefone) + "%0A" +
+        "👥 Convidados: " + encodeURIComponent(convidados) + "%0A" +
+        "💌 Mensagem: " + encodeURIComponent(mensagem);
+
+    const numero = "244936788358";
+
+    const url = "https://wa.me/" + numero + "?text=" + texto;
+
+    window.open(url, "_blank");
+
+});
+</script>
+</body>
+
+</html>
