@@ -1,8 +1,8 @@
 /* =========================================
    Kevin & Ruth - Casamento
    :root {
-    --blue: #0B1F3A;
-    --dark-blue: #071A33;
+    --blue: #blue;
+    --dark-blue: #blue;
     --gold: #D4AF37;
     --white: #FFFFFF;
     --light: #F8F8F8;
@@ -97,7 +97,7 @@ nav a:hover{
 /* HERO */
 
 .hero {
-    height: 100vh;
+    height: 10vh;
     background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("../images/hero/couple.jpg");
     background-size: cover;
     background-position: center;
